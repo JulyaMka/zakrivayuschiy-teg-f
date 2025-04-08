@@ -13,4 +13,67 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  display: grid;
+  font-variation-settings: var(--font-weight);
+  font-size: var(--font-size);
 }
+
+.header {
+  justify-self: center;
+  align-self: center;
+  font-weight: normal;
+  background-color: #fff;
+  border: #000 1px solid;
+  inline-size: clamp(375px, 60%, 700px); /*возможно поменять*/
+  block-size: 368px;
+  display: grid;
+  gap: 20px;
+  margin-block: 100px;
+  font-family: var(--accent-font);
+  
+}
+
+.title {
+  font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  align-self: end;
+  justify-self: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  justify-self: center;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.content__section-caption {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding-block: 3px;
+  padding-inline-start: 10px;
+}
+
+.content {
+  inline-size: 696px;
+  justify-self: center;
+  align-self: center;
+}
+
+.content__section-image {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+}
+
+.content__section-text {
+  border: 2px solid #000;
+  line-height: 21px;
+  padding: 25px;
+  display: grid;
+  gap: 27px;
+}
+
