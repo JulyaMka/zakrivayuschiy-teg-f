@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any">
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
-  </head>
-  <body class="page">
-    <header class="header">
-        <h1 class="title">
-            &lt/HTML&gt
-        </h1>
-        <p class="subtitle">ЗАКРЫВАЮЩИЙ ТЕГ</p>
-    </header>
-    <main class="content">
-      <article class="content__section">
-        <h2 class="content__section-caption">
-          Фритрек и нулевой спринт: Подготовка к работе
-        </h2>
-        <img src="./images/card.svg" class="content__section-image">
-        
-          
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body class="page">
+  <header class="header">
+    <h1 class="title">
+      &lt/HTML&gt
+    </h1>
+    <p class="subtitle">ЗАКРЫВАЮЩИЙ ТЕГ</p>
+  </header>
+  <main class="content">
+    <article class="content__section">
+      <h2 class="content__section-caption">
+        Фритрек и нулевой спринт: Подготовка к работе
+      </h2>
+      <img src="./images/card.svg" class="content__section-image">
+      <div class="content__section-place">
         <div class="content__section-text">
-        <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. 
-          И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+          <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу.
+            И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
-      </article>
-    </main>
-    <script src="./scripts/like.js"></script>
-  </body>
+        <button class="card__icon-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" fill="none" viewBox="0 0 27 24" class="like-icon">
+            <path fill="#000" d="M6 0H3v3h3V0Zm3 0H6v3h3V0ZM3 3H0v3h3V3Zm0 3H0v3h3V6Zm0 3H0v3h3V9Zm9-9H9v3h3V0ZM6 12H3v3h3v-3Zm3 3H6v3h3v-3Zm3 3H9v3h3v-3Zm9-18h3v3h-3V0Zm-3 0h3v3h-3V0Zm6 3h3v3h-3V3Zm0 3h3v3h-3V6Zm0 3h3v3h-3V9Zm-9-9h3v3h-3V0Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0-15h-3v3h3V3Zm0 18h-3v3h3v-3Z"/>
+          </svg>   
+          <button class="card__like-button">       
+          <p class="button__text">Like</p>
+        </button>
+        </button>
+      </div>
+    </article>
+  </main>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>
