@@ -34,17 +34,15 @@
   display: grid;
   font-family: var(--main-font), "Inter", sans-serif;
   font-size: var(--main-font-size, 18px);
-  background: repeating-linear-gradient(
-      90deg,
+  background: repeating-linear-gradient(90deg,
       #d3d3d3 0 2px,
-      rgb(0 0 0 / 0) 2px 4px
-    ),
+      rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--font-weight, 400);
+  font-variation-settings: "wght" var(--font-weight, 400), "wdth" 100%;
 }
 
 .header {
@@ -54,8 +52,7 @@
   align-self: center;
   margin-block: 101px;
   border: #000 2px solid;
-  padding: clamp(7.5rem, 7.3233rem + 0.7519vw, 8rem)
-    clamp(0.875rem, -1.4772rem + 10.0094vw, 7.53125rem);
+  padding: clamp(7.5rem, 7.3233rem + 0.7519vw, 8rem) clamp(0.875rem, -1.4772rem + 10.0094vw, 7.53125rem);
   font-family: var(--accent-font), "PressStart2P", fantasy;
   font-weight: normal;
   background-color: #fff;
@@ -86,7 +83,7 @@
 .content__card-caption {
   border: 2px solid #000;
   padding-inline: 10px;
-  padding-block: 3px;
+  padding-block: 4px;
   font-weight: bold;
   font-size: 18px;
 }
@@ -97,7 +94,6 @@
 
 .content__card-image {
   display: block;
-  border: 2px solid #000;
   object-fit: cover;
   inline-size: 100%;
   aspect-ratio: 1/1;
@@ -146,6 +142,7 @@
 .card__image-container {
   position: relative;
   display: block;
+  border: 2px solid #000;
 }
 
 .card__label {
@@ -163,7 +160,7 @@
 .content__card-text {
   display: grid;
   gap: calc(var(--base-gap) * 2.7);
-  margin-block-end: 22px;
+  margin-block-end: 25px;
   line-height: 21px;
 }
 
@@ -221,11 +218,9 @@
 }
 
 .card__icon-button {
-  border: none;
   border: 2px solid transparent;
   padding: 0;
   background-color: transparent;
-  block-size: 100%;
   block-size: 41px;
 }
 
@@ -241,7 +236,7 @@
 .group-button-like {
   display: flex;
   justify-self: end;
-  gap: calc(var(--base-gap) * 0.8);
+  gap: calc(var(--base-gap) * 0.4);
 }
 
 .button__save {
@@ -267,8 +262,7 @@
   mix-blend-mode: difference;
 }
 
-@supports (-webkit-text-stroke: 1px var(--text-stroke-color)) or
-  (text-stroke: 1px var(--text-stroke-color)) {
+@supports (-webkit-text-stroke: 1px var(--text-stroke-color)) or (text-stroke: 1px var(--text-stroke-color)) {
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-stroke-color, #fff);
@@ -403,5 +397,19 @@ path.sparks {
   .save_icon {
     width: 28px;
     height: 28px;
+  }
+
+  .content__card-caption {
+    padding-block: 3px;
+  }
+
+  .content__card-text {
+    margin-block-end: 22px;
+  }
+
+  .group-button-like {
+    display: flex;
+    justify-self: end;
+    gap: calc(var(--base-gap) * 0.8);
   }
 }
