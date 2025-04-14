@@ -2,6 +2,14 @@
 :root {
   --main-font: 'Inter';
   --accent-font: 'PressStart2P';
-  --font-size: 18px;
+  --main-font-size: 18px;
+  --font-size: 14px;
+  --base-gap: 10px;
   --font-weight: 400;
+  --text-stroke-color: #fff;
+  --text-color: #fff;
+  --bg-color: #fff;
+  --overlay-color: #000;
+  --color-like-core: #FF0000;
+  --color-like-stroke: #000;
 }
