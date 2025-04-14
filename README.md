@@ -1,1 +1,1 @@
-https://julyamka.github.io/zakrivayuschiy-teg-f/
+https://github.com/julyamka/zakrivayuschiy-teg-f
