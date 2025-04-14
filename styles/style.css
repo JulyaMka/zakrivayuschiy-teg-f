@@ -179,8 +179,7 @@
   background-color: var(--bg-color, #fff);
 }
 
-.card__like-button::before,
-.button-save::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -193,8 +192,7 @@
   transform-origin: left;
 }
 
-.card__like-button:hover::before,
-.button-save:hover::before {
+.button:hover::before {
   transform: scaleX(1);
 }
 
@@ -294,6 +292,7 @@
 }
 
 .dialog__button-ok {
+  position: relative;
   padding-block: 7.5px;
   color: var(--text-color, #fff);
   text-transform: uppercase;
